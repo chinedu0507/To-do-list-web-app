@@ -1,12 +1,17 @@
 body{
   font-family: 'Courier New', Helvetica, sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-image: url('../images/img2.jpeg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
 }
 
 a{
@@ -15,7 +20,6 @@ a{
 }
 
 .container {
-  box-sizing: border-box;
   padding-top: 20px;
   margin-top: 50px;
   text-align: center;
@@ -23,6 +27,23 @@ a{
   margin: auto;
   position: relative;
 }
+
+/* Make background transparent .container::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/img2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+} */
 
 #main-header{
   text-align: center;
@@ -41,8 +62,8 @@ a{
 
 #user{
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   /* position: absolute;
   top: 35%;
   left: 50%;
@@ -74,7 +95,6 @@ a{
   /* transform: translate(-50%, 50%); */
   padding: 10px 20px 5px 20px;
   background-color: #5a404d;
-  opacity: 0.9;
 }
 
 .form-item{
@@ -98,8 +118,8 @@ a{
 }
 
 #already{
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin-top: 13px;
+  margin-bottom: 10px;
   padding: 0;
   font-style: italic;
   color: #000;
@@ -107,28 +127,38 @@ a{
 
 #footer{
   text-align: center;
-  background: #5a404d;
-  opacity: 0.9;
+  /* background: #5a404d; */
   color: #000;
   font-weight: bold;
   width: 100%;
-  /* margin: 0px 60px; */
   padding: 8px;
   position: fixed;
   top: 90%;
   left: 0%;
 }
 
-@media(width < 700px) /* what about height? */
+@media(max-width: 700px) /* what about height? */
 {
-
   body{
     background-size: auto;
+    margin: auto;
+  }
+
+  #main-header{
+    margin-bottom: 5px;
+  }
+
+  #user{
+    display: block;
   }
 
   .form{
-    position: fixed;
-    margin: 0;
+    margin: auto;
+    display: block;
+  }
+
+  #footer{
+    padding: 3px;
+    margin-top: 5px;
   }
 }
-/* Media query for responsiveness */

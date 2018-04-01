@@ -1,0 +1,143 @@
+body{
+  font-family: 'Courier New', Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('../images/img2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#user{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.container{
+  padding-top: 20px;
+  margin-top: 50px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+#main-header{
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#sub-header{
+  margin-top: 2px;
+  padding: 0;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+
+.alert-danger{
+  background-color: red;
+  color: #fff;
+}
+
+.alert-success{
+  background-color: green;
+  color: #fff;
+}
+
+#signin h2{
+  font-weight: normal;
+  margin: 0;
+  padding: 10px 0;
+  color: #000;
+}
+
+.form{
+  box-sizing: border-box;
+  position: inherit;
+  margin: auto;
+  width: 250px;
+  /* transform: translate(-50%, 50%); */
+  padding: 10px 20px 5px 20px;
+  background-color: #5a404d;
+}
+
+.form-item{
+  padding: 4px 3px;
+  margin: 4px;
+}
+
+.button{
+  margin-top: 20px;
+  padding: 8px 13px;
+  color: #fff;
+  background: #000;
+  font-size: 17px;
+  border: none;
+  background: solid;
+}
+
+.form input[type=submit]:hover{
+  cursor: pointer;
+  background: #815857;
+  color: #f3f3f3;
+}
+
+#forgot{
+  margin-top: 13px;
+  margin-bottom: 10px;
+  padding: 0;
+  font-style: italic;
+  color: #000;
+}
+
+#footer{
+  text-align: center;
+  /* background: #5a404d; */
+  color: #000;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px;
+  position: fixed;
+  top: 90%;
+  left: 0%;
+}
+
+@media(max-width: 700px) /* what about height? */
+{
+  body{
+    background-size: auto;
+    margin: auto;
+  }
+
+  #main-header{
+    margin-bottom: 5px;
+  }
+
+  #user{
+    display: block;
+  }
+
+  .form{
+    margin: auto;
+    display: block;
+  }
+
+  #footer{
+    padding: 3px;
+    margin-top: 5px;
+  }
+}

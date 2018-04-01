@@ -1,19 +1,40 @@
-<?php include_once('inc/header.php'); ?>
+<?php
+// INCLUDE PHP PART TO DEAL WITH ERRORS WHEN SIGNING IN
+ ?>
 
-  <div class="container-fluid">
-    <h2 class="signin text-center"> Sign in</h2>
-      <form class="form-group container" action="form_mysql_signin.php" method="post">
-        <!-- INCLUDE FONT AWESOME -->
-        <div>
-          <label> Username </label>
-            <input type="text" name="username" class="form-control" required>
-        </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="css/styles_signin.css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+  </head>
+  <body>
 
-        <div>
-          <label> Password</label>
-            <input type="text" name= "password_sign_in" class="form-control" required>
+  <div class="container">
+    <h1 id="main-header"> My To Do</h1> <!-- Think of a better app name -->
+    <h5 id="sub-header"> Manage your day </h5>
+
+    <div id="user"><i class="fas fa-user fa-3x"></i></div>
+
+      <form class="form" action="form_mysql_signin.php" method="post">
+        <div id="signin">
+            <h2> Sign in</h2>
         </div>
-      </form>
+        <div class="form-item">
+            <input type="text" name="username" required placeholder="Enter username">
+        </div>
+        <div class="form-item">
+            <input type="text" name= "password_sign_in" required placeholder="Enter password">
+        </div>
+        <input class="button" type="submit" name="" value="Sign in">
+        <br>
+        <a href="#"> <!-- Activate this link -->
+          <p id="forgot">Forgot your password?</p>
+        </a>
+      </form
   </div>
 
-<?php include_once('inc/header.php'); ?>
+<?php include_once('inc/footer.php'); ?>

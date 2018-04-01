@@ -71,48 +71,47 @@ function fix_string($conn, $var)
  ?>
 
 <?php include_once('inc/header.php'); ?>
-    <div class="container">
-      <h1 id="main-header"> My To Do</h1> <!-- Think of a better app name -->
-      <h5 id="sub-header"> Manage your day </h5>
+  <div class="container">
+    <h1 id="main-header"> My To Do</h1> <!-- Think of a better app name -->
+    <h5 id="sub-header"> Manage your day </h5>
 
 <!-- output the necessary alert for error and successful logins -->
-    <?php if($msg !=''): ?>
-        <div class="<?php echo $msgClass; ?>">
-          <?php echo $msg; ?></div>
-      <?php endif; ?>
+  <?php if($msg !=''): ?>
+      <div class="<?php echo $msgClass; ?>">
+        <?php echo $msg; ?></div>
+    <?php endif; ?>
 
-      <!-- Add font awesome user icon -->
-      <div id="user">
-        <i class="fas fa-user fa-3x"></i>
-      </div>
+    <!-- Add font awesome user icon -->
+    <div id="user">
+      <i class="fas fa-user fa-3x"></i>
+    </div>
 
-      <!-- Form -->
-        <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-          <div id="signup">
-            <h2>Sign Up</h2>
+    <!-- Form -->
+      <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <div id="signup">
+          <h2>Sign Up</h2>
+        </div>
+          <div class="form-item">
+            <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $name: ''; ?>" required placeholder="Enter first name only">
           </div>
-            <div class="form-item">
-              <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $name: ''; ?>" required placeholder="Enter first name only">
-            </div>
-            <div class="form-item">
-              <input type="email" name="email" value="<?php echo isset($_POST['email']) ? $email: ''; ?>" required placeholder="Enter email">
-            </div>
-            <div class="form-item">
-              <input type="text" name="username" value="<?php echo isset($_POST['username']) ? $usernamme: ''; ?>" required placeholder="Enter a username">
-            </div>
-            <div class="form-item">
-              <input type="password" name="password" required placeholder="Enter password">
-            </div>
-            <div class="form-item">
-              <input type="password" name="password2" required placeholder="Re-type password">
-            </div>
-            <input type="submit" class="button" value="Create Account">
+          <div class="form-item">
+            <input type="email" name="email" value="<?php echo isset($_POST['email']) ? $email: ''; ?>" required placeholder="Enter email">
+          </div>
+          <div class="form-item">
+            <input type="text" name="username" value="<?php echo isset($_POST['username']) ? $usernamme: ''; ?>" required placeholder="Enter a username">
+          </div>
+          <div class="form-item">
+            <input type="password" name="password" required placeholder="Enter password">
+          </div>
+          <div class="form-item">
+            <input type="password" name="password2" required placeholder="Re-type password">
+          </div>
+          <input type="submit" class="button" value="Create Account">
 
-        <!-- Link for users with an account -->
-        <a href="sign_in_page.php">
-          <p id="already">Already have an account?</p>
-        </a>
-        <!-- Add functionality for logging as a guest -->
-        </form>
-      <?php include_once('inc/footer.php'); ?>
-    </div> <!-- container class end -->
+      <a href="sign_in_page.php">
+        <p id="already">Already have an account?</p>
+      </a>
+      <!-- Add functionality for logging as a guest -->
+      </form>
+    <?php include_once('inc/footer.php'); ?>
+  </div> <!-- container class end -->
