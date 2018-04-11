@@ -1,7 +1,3 @@
-<?php
-// INCLUDE PHP PART TO DEAL WITH ERRORS WHEN SIGNING IN
- ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -24,14 +20,15 @@
             <h2> Sign in</h2>
         </div>
         <div class="form-item">
-            <input type="text" name="username" required placeholder="Enter username">
+            <input type="text" name="username_sign_in" required placeholder="Enter username">
         </div>
         <div class="form-item">
-            <input type="text" name= "password_sign_in" required placeholder="Enter password">
+            <input type="password" name= "password_sign_in" required placeholder="Enter password">
         </div>
-        <input class="button" type="submit" name="" value="Sign in">
+        <input class="button" type="submit" value="Sign in">
         <br>
         <a href="#"> <!-- Activate this link -->
+          <!-- block or suggest after 3 failed sign in attempts -->
           <p id="forgot">Forgot your password?</p>
         </a>
       </form

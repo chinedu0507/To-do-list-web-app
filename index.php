@@ -1,6 +1,6 @@
 <?php
 
-require_once ('config/login.php');
+require_once('config/login.php');
 require_once('config/db.php');
 
 // Initialize message variables
@@ -113,5 +113,15 @@ function fix_string($conn, $var)
       </a>
       <!-- Add functionality for logging as a guest -->
       </form>
-    <?php include_once('inc/footer.php'); ?>
+
+  <footer id="footer">
+    <p>
+      Amata Media Copyright &copy; 2018
+    </p>
+  </footer>
+
   </div> <!-- container class end -->
+  <!-- <script src="js/app.js"></script> -->
+
+  </body>
+  </html>

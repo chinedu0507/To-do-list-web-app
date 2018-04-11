@@ -2,8 +2,12 @@
 
 session_start();
 
-require_once ('config/login.php');
-require_once ('config/db.php');
+require_once('config/login.php');
+require_once('config/db.php');
+
+// Initialize message variables
+// $msg = '';
+// $msgClass = '';
 
 // Sign in Case
 if(isset($_POST['username_sign_in']) && isset($_POST['password_sign_in']))
@@ -26,7 +30,7 @@ if(isset($_POST['username_sign_in']) && isset($_POST['password_sign_in']))
       if($password_sign_in == $row[3]) {
         session_start(); // start the session
 
-        $_SESSION['username'] = $username;
+        $_SESSION['username'] = $username_sign_in;
         header("Location: welcome-add-list-page.php");
       }
       else

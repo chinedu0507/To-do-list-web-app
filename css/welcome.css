@@ -1,0 +1,127 @@
+body{
+  font-family: Helvetica, 'Courier New', Helvetica, sans-serif; /* Choose better font */
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('../images/img4.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.container{
+  text-align: center;
+  width: 750px;
+  height: 550px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  padding-bottom: 200px;
+}
+
+#greeting{
+  margin-top: 5px;
+}
+
+#greeting h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.time{
+  margin-top: 36px;
+  text-align: center;
+  font-size: 35px;
+  font-family: Tahoma;
+}
+
+.time #date{
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 35px;
+  font-family: Tahoma;
+}
+
+#what{
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+
+input[type=text]{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 1px #f4f4f4;
+  background-color: transparent;
+  outline: none;
+  width: 250px;
+  font-size: 20px;
+}
+
+ul{
+  box-sizing: border-box;
+}
+
+ul .listItems{
+  list-style: none;
+  padding: 3px 5px;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+  outline: none;
+  /* background: #333; */
+}
+
+.editable{
+  outline: none;
+}
+
+.btn{
+  width:25px;
+  height: 20px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.delete{
+  background-color: red;
+  margin-left: 20px;
+  border: none;
+  opacity: 0.8;
+}
+
+.checks{
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  }
+
+#footer{
+  text-align: center;
+  font-family: 'Courier New';
+  color: #000;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px;
+  position: fixed;
+  top: 92%;
+  left: 0%;
+}
+
+
+  /* MAKE SURE ALL BROWSER TYPES ARE CONSIDERED IN THE IMPORTANT PARTS */
+
+/* ADD MEDIA QUERY  */
