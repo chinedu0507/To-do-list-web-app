@@ -15,6 +15,18 @@ $row = $result->fetch_array(MYSQLI_NUM); //fetch_item instead?
 
 $result->close();
 $connection->close();
+
+if(isset($_POST['signout'])){
+  // Destroy session and redirect to sign_in_page
+  session_destroy();
+  header("Location: sign_in_page.php");
+}
+
+if(!isset($_SESSION['username'])){
+  // Redirect to sign_in_page
+  header("Location: sign_in_page.php");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -39,8 +51,8 @@ $connection->close();
         <br>
 
         <p id="what"> What are we doing today? </p>
-        <!-- <p id="what"> What do you have planned for today? </p> -->
 
+        <!-- Form input for the day's activities -->
         <form id="form">
           <input type="text" id="item">
         </form>
@@ -49,8 +61,10 @@ $connection->close();
           <!-- <li class="listItems"></li> -->
         </ul>
 
-
-      <!-- ADD LOG OUT BUTTON , SESSION DESTROY THEN RETURN TO SIGN IN PAGE-->
+        <!-- Sign out button -->
+        <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+          <input type="submit" id="signout" name="signout" value="Sign out">
+        </form>
 
   <footer id="footer">
     <p>
@@ -59,7 +73,8 @@ $connection->close();
   </footer>
 
   </div> <!-- container class end -->
-<script src="js/welcome.js"></script>
 
+  <!-- <script src="./js/jquery-3.3.1.slim.js"></script> -->
+  <script src="js/welcome.js"></script>
   </body>
   </html>

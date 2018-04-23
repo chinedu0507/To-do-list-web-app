@@ -12,6 +12,11 @@ body{
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+  transition: all 0.05s ease-out 0.1s;
+  -moz-transition: all 0.05s ease-out 0.1s;
+  -webkit-transition: all 0.05s ease-out 0.1s;
+  -o-transition: all 0.05s ease-out 0.1s;
+  -ms-transition: all 0.05s ease-out 0.1s;
 }
 
 .container{
@@ -36,6 +41,11 @@ body{
   margin-top: 40px;
   margin-bottom: 10px;
   padding: 0;
+  transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-out 0.5s;
+  -webkit-transition: all 0.8s ease-out 0.5s;
+  -o-transition: all 0.8s ease-out 0.5s;
+  -ms-transition: all 0.8s ease-out 0.5s;
 }
 
 .time{
@@ -45,18 +55,35 @@ body{
   font-family: Tahoma;
 }
 
+.time #hour, .time #min{
+  transition: all 1.4s ease-in-out 0.2s;
+  -moz-transition: all 1.4s ease-out 0.2s;
+  -webkit-transition: all 1.4s ease-out 0.2s;
+  -o-transition: all 1.4s ease-out 0.2s;
+  -ms-transition: all 1.4s ease-out 0.2s;
+}
 .time #date{
   display: block;
   text-align: center;
   padding-top: 10px;
   font-size: 35px;
   font-family: Tahoma;
+  transition: all 2.0s ease-in-out 0.6s;
+  -moz-transition: all 2.0s ease-out 0.6s;
+  -webkit-transition: all 2.0s ease-out 0.6s;
+  -o-transition: all 2.0s ease-out 0.6s;
+  -ms-transition: all 2.0s ease-out 0.6s;
 }
 
 #what{
   text-align: center;
   font-style: italic;
   font-size: 20px;
+  transition: all 1.3s ease-in-out 1.0s;
+  -moz-transition: all 1.3s ease-out 1.0s;
+  -webkit-transition: all 1.3s ease-out 1.0s;
+  -o-transition: all 1.3s ease-out 1.0s;
+  -ms-transition: all 1.3s ease-out 1.0s;
 }
 
 input[type=text]{
@@ -68,6 +95,11 @@ input[type=text]{
   outline: none;
   width: 250px;
   font-size: 20px;
+  transition: all 0.8s ease-in-out 1.2s;
+  -moz-transition: all 0.8s ease-out 1.2s;
+  -webkit-transition: all 0.8s ease-out 1.2s;
+  -o-transition: all 0.8s ease-out 1.2s;
+  -ms-transition: all 0.8s ease-out 1.2s;
 }
 
 ul{
@@ -109,6 +141,31 @@ ul .listItems{
   margin-right: 8px;
   }
 
+#signout{
+    margin-top: 20px;
+    padding: 8px 13px;
+    color: #fff;
+    background: #000;
+    border-radius: 8px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: solid;
+    position: fixed;
+    /* position: absolute; */
+    /* margin: 0 auto; */
+    top: 83%;
+    left: 47%;
+    display: block;
+  }
+
+  #signout:hover{
+    cursor: pointer;
+    background: #333;
+    color: #f3f3f3;
+  }
+
 #footer{
   text-align: center;
   font-family: 'Courier New';
@@ -121,7 +178,29 @@ ul .listItems{
   left: 0%;
 }
 
+@media screen and (max-width:600px){
 
+  body{
+    position: relative;
+  }
+
+  ul{
+    display: block;
+  }
+
+  #signout{
+    position: absolute;
+    top:80%;
+    left:47%;
+  }
+
+  #footer{
+    position: absolute;
+    top:92%;
+    left:0%;
+  }
+
+}
   /* MAKE SURE ALL BROWSER TYPES ARE CONSIDERED IN THE IMPORTANT PARTS */
 
 /* ADD MEDIA QUERY  */
