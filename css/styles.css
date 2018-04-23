@@ -137,7 +137,7 @@ a{
   left: 0%;
 }
 
-@media(max-width: 700px) /* what about height? */
+@media(max-width: 700px)
 {
   body{
     background-size: auto;
