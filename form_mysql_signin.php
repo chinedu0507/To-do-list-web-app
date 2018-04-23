@@ -1,13 +1,7 @@
 <?php
 
-session_start();
-
 require_once('config/login.php');
 require_once('config/db.php');
-
-// Initialize message variables
-// $msg = '';
-// $msgClass = '';
 
 // Sign in Case
 if(isset($_POST['username_sign_in']) && isset($_POST['password_sign_in']))
