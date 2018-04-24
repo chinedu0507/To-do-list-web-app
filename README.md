@@ -3,7 +3,8 @@
 # Screen shots
 
 # Sign up page
-![alt text](screenshots/sign_up_page.png "Sign up page")
+<img src="screenshots/sign_up_page.png" width="300">
+<!-- ![alt text](screenshots/sign_up_page.png "Sign up page") -->
 
 # Sign in page
 ![alt text](screenshots/sign_in_page.png "Sign in page")

@@ -1,5 +1,5 @@
 body{
-  font-family: Helvetica, 'Courier New', Helvetica, sans-serif; /* Choose better font */
+  font-family: Helvetica, 'Courier New', sans-serif; /* Choose better font */
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -21,8 +21,7 @@ body{
 
 .container{
   text-align: center;
-  width: 750px;
-  height: 550px;
+  width: 80%;
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
@@ -178,12 +177,11 @@ ul .listItems{
   left: 0%;
 }
 
-@media screen and (max-width:600px){
+@media (max-width:700px){
 
   body{
     background-size: auto;
     margin: auto;
-    position: relative;
   }
 
   ul{
@@ -193,7 +191,8 @@ ul .listItems{
   #signout{
     position: absolute;
     top:80%;
-    left:47%;
+    left:50%;
+    margin: 0 auto;
   }
 
   #footer{
