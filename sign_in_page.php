@@ -33,5 +33,9 @@
         </a>
       </form
   </div>
-
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(){
+    sessionStorage.clear();
+  });
+</script>
 <?php include_once('inc/footer.php'); ?>

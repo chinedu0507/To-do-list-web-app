@@ -5,14 +5,16 @@ require_once("config/login.php");
 require_once("config/db.php");
 
 session_start(); // start session
+
+// Assign variable username the session variable of the same name
 $username = $_SESSION['username'];
 
+// Query database
 $query = "SELECT * FROM users WHERE username ='$username'";
 $result = $connection->query($query);
 if (!$result) die("Error" . $connection->error);
 
-$row = $result->fetch_array(MYSQLI_NUM); //fetch_item instead?
-
+$row = $result->fetch_array(MYSQLI_NUM);
 $result->close();
 $connection->close();
 

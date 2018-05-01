@@ -6,6 +6,8 @@ Activities to be added on the list are typed into the input field below the '*Wh
 
 Completed items are checked off to take the off the list. A confirmation box pops up when the user clicks on the delete button to remove an item on their to-do list. In addition, the activities on the list can be edited by simply clicking on the relevant text to be revised.
 
+Session storage is used in storing the items on the list. A custom coded function is used to populate the to-do list using the key and values from the session storage. This is to ensure that the to-do list persist on the page even on a page reload. When the user signs out, the session storage is cleared.
+
 ___
 
 ## Technologies used
@@ -17,9 +19,7 @@ ___
 
 ## Further Improvements
 
-Currently, the list items get deleted once the web page is refreshed. Additionally, the '*forgot password?*' feature is inactive. I am working on activating this feature by using user authentication on the PHP framework, **Laravel**. Laravel will enable me to handle user details more securely and might also be able to use it to solve my page refresh issue.
-
-I am also exploring using session storage or AJAX and JSON to sort out the page refresh problem.
+Currently, the list items get deleted once the web page is refreshed. Additionally, the '*forgot password?*' feature is inactive. I am working on activating this feature by using user authentication on the PHP framework, **Laravel**. Laravel will enable me to handle user details more securely.
 
 ___
 ## Screen shots
