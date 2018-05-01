@@ -19,7 +19,7 @@ ___
 
 ## Further Improvements
 
-Currently, the list items get deleted once the web page is refreshed. Additionally, the '*forgot password?*' feature is inactive. I am working on activating this feature by using user authentication on the PHP framework, **Laravel**. Laravel will enable me to handle user details more securely.
+Currently, the '*forgot password?*' feature is inactive. I am working on activating this feature by using user authentication on the PHP framework, **Laravel**. In addition, Laravel will enable me to handle user details more securely.
 
 ___
 ## Screen shots
