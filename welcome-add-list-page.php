@@ -52,7 +52,7 @@ if(!isset($_SESSION['username'])){
         </div>
         <br>
 
-        <p id="what"> What are we doing today? </p>
+        <p id="what"> What are you doing today? </p>
 
         <!-- Form input for the day's activities -->
         <form id="form">
@@ -76,7 +76,6 @@ if(!isset($_SESSION['username'])){
 
   </div> <!-- container class end -->
 
-  <!-- <script src="./js/jquery-3.3.1.slim.js"></script> -->
-  <script src="js/welcome.js"></script>
+    <script src="js/welcome.js"></script>
   </body>
   </html>

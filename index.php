@@ -19,9 +19,9 @@ isset($_POST['password']) && isset($_POST['password2']))
 
   if($password === $password2)
   {
-    // Salting password..check login.php for salts
-    $token = hash('ripemd128', "$salt1$password$salt2"); // CHECK IF RIPEMD128 IS STILL SAFE
-
+    // Salting password
+    $token = hash('ripemd128', "$salt1$password$salt2");
+    
     // Query the database
     $query = "INSERT INTO users VALUES('$name', '$email', '$username', '$token')";
     $result = $connection->query($query);
@@ -49,15 +49,12 @@ isset($_POST['password']) && isset($_POST['password2']))
     }
   }
   else {
-    //echo 'Passwords do not match. Try again';
     $msg = "Passwords do not match. Try again";
     $msgClass = 'alert-danger';
-    //header("Location: index.php");
   }
 }
 
-// APPLY BRAD'S METHOD LATER
-
+// Functions to handle user inputs securely
 function get_post($conn, $var)
 {
   return htmlentities(fix_string($conn, $var));
@@ -72,7 +69,7 @@ function fix_string($conn, $var)
 
 <?php include_once('inc/header.php'); ?>
   <div class="container">
-    <h1 id="main-header"> My To Do</h1> <!-- Think of a better app name -->
+    <h1 id="main-header"> My To Do</h1>
     <h5 id="sub-header"> Manage your day </h5>
 
 <!-- output the necessary alert for error and successful logins -->
@@ -111,7 +108,6 @@ function fix_string($conn, $var)
       <a href="sign_in_page.php">
         <p id="already">Already have an account?</p>
       </a>
-      <!-- Add functionality for logging as a guest -->
       </form>
 
   <footer id="footer">
@@ -121,7 +117,6 @@ function fix_string($conn, $var)
   </footer>
 
   </div> <!-- container class end -->
-  <!-- <script src="js/app.js"></script> -->
 
   </body>
   </html>

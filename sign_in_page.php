@@ -10,7 +10,7 @@
   <body>
 
   <div class="container">
-    <h1 id="main-header"> My To Do</h1> <!-- Think of a better app name -->
+    <h1 id="main-header"> My To Do</h1>
     <h5 id="sub-header"> Manage your day </h5>
 
     <div id="user"><i class="fas fa-user fa-3x"></i></div>
@@ -34,6 +34,7 @@
       </form
   </div>
 <script type="text/javascript">
+// clear session storage on load of the sign in page
   document.addEventListener("DOMContentLoaded", function(){
     sessionStorage.clear();
   });

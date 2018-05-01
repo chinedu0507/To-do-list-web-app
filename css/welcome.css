@@ -3,6 +3,7 @@ body{
   font-size: 16px;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   box-sizing: border-box;
   background-image: url('../images/img4.jpeg');
   background-position: center;
@@ -35,7 +36,7 @@ body{
 
 #greeting h2{
   text-align: center;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 500;
   margin-top: 40px;
   margin-bottom: 10px;
@@ -48,7 +49,7 @@ body{
 }
 
 .time{
-  margin-top: 36px;
+  margin-top: 25px;
   text-align: center;
   font-size: 35px;
   font-family: Tahoma;
@@ -64,7 +65,7 @@ body{
 .time #date{
   display: block;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
   font-size: 35px;
   font-family: Tahoma;
   transition: all 2.0s ease-in-out 0.6s;
@@ -77,6 +78,7 @@ body{
 #what{
   text-align: center;
   font-style: italic;
+  margin-bottom: 10px;
   font-size: 20px;
   transition: all 1.3s ease-in-out 1.0s;
   -moz-transition: all 1.3s ease-out 1.0s;
@@ -103,6 +105,9 @@ input[type=text]{
 
 ul{
   box-sizing: border-box;
+  text-align: center;
+  overflow-y: hidden;
+  padding: 0 0;
 }
 
 ul .listItems{
@@ -112,6 +117,7 @@ ul .listItems{
   width: 400px;
   text-align: center;
   outline: none;
+  overflow: hidden;
   /* background: #333; */
 }
 
@@ -152,7 +158,6 @@ ul .listItems{
     text-align: center;
     background: solid;
     position: fixed;
-    /* position: absolute; */
     /* margin: 0 auto; */
     top: 83%;
     left: 47%;
@@ -173,7 +178,7 @@ ul .listItems{
   width: 100%;
   padding: 8px;
   position: fixed;
-  top: 92%;
+  top: 90%;
   left: 0%;
 }
 
@@ -189,14 +194,14 @@ ul .listItems{
   }
 
   #signout{
-    position: absolute;
+    position: fixed;
     margin: 0 auto;
-    top: 83%;
+    top: 88%;
     left: 43%;
   }
 
   #footer{
-    position: absolute;
+    position: fixed;
     top:92%;
     left:0%;
   }

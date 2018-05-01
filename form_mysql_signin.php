@@ -3,7 +3,7 @@
 require_once('config/login.php');
 require_once('config/db.php');
 
-// Sign in Case
+// Sign in validation
 if(isset($_POST['username_sign_in']) && isset($_POST['password_sign_in']))
 {
   $username_sign_in = get_post($connection, $_POST['username_sign_in']);
@@ -44,6 +44,7 @@ if(isset($_POST['username_sign_in']) && isset($_POST['password_sign_in']))
 $result->close();
 $connection->close();
 
+// Functions to handle user input securely
 function get_post($conn, $var)
 {
   return htmlentities(fix_string($conn, $var));
@@ -52,7 +53,7 @@ function get_post($conn, $var)
 function fix_string($conn, $var)
 {
     if (get_magic_quotes_gpc()) $var = stripslashes($var);
-    return $conn->real_escape_string($var);//($_POST[$var]);
+    return $conn->real_escape_string($var);
 }
 
 ?>

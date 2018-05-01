@@ -16,8 +16,8 @@ isset($_POST['password']) && isset($_POST['password2']))
 
   if($password === $password2)
   {
-    // Salting password..check login.php for salts
-    $token = hash('ripemd128', "$salt1$password$salt2"); // CHECK IF RIPEMD128 IS STILL SAFE
+    // Salting password
+    $token = hash('ripemd128', "$salt1$password$salt2");
 
     // Query the database
     $query = "INSERT INTO users VALUES('$name', '$email', '$username', '$token')";
@@ -49,8 +49,8 @@ isset($_POST['password']) && isset($_POST['password2']))
   }
 }
 
-// APPLY BRAD'S METHOD LATER
 
+// Functions to handle user input securely
 function get_post($conn, $var)
 {
   return htmlentities(fix_string($conn, $var));
