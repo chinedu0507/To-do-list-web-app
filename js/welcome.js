@@ -123,9 +123,8 @@
       sessionStorage.setItem('toDo', listString);
 
       var retrieve = sessionStorage.getItem('toDo');
-      var ree = JSON.parse(retrieve); // convert it back to an object -> array
+      // var ree = JSON.parse(retrieve); // convert it back to an object -> array
 
-      console.log(ree);
       // Create li element
       var li = document.createElement('li');
 
