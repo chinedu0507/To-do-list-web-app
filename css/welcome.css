@@ -118,7 +118,6 @@ ul .listItems{
   text-align: center;
   outline: none;
   overflow: hidden;
-  /* background: #333; */
 }
 
 .editable{
@@ -158,9 +157,8 @@ ul .listItems{
     text-align: center;
     background: solid;
     position: fixed;
-    /* margin: 0 auto; */
     top: 83%;
-    left: 47%;
+    left: 45%;
     display: block;
   }
 
@@ -189,20 +187,35 @@ ul .listItems{
     margin: auto;
   }
 
+  #greeting h2{
+    font-size: 35px;
+  }
+  .time{
+    font-size: 26px;
+  }
+
+  .time #date{
+    font-size: 26px;
+  }
+
+  #what{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
   ul{
     display: block;
   }
 
   #signout{
     position: fixed;
-    margin: 0 auto;
-    top: 88%;
-    left: 43%;
+    top: 85%;
+    /* margin: 0 auto; */
+    left: 40%; /* container is 80% in width, thus 50% of that is 40%*/
   }
 
   #footer{
     position: fixed;
-    top:92%;
+    top:91%;
     left:0%;
   }
 
