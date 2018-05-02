@@ -1,5 +1,5 @@
 body{
-  font-family: Helvetica, 'Courier New', sans-serif; /* Choose better font */
+  font-family: Helvetica, 'Courier New', sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -184,7 +184,7 @@ ul .listItems{
 
   body{
     background-size: auto;
-    margin: auto;
+    /* margin: auto; */
   }
 
   #greeting h2{
@@ -219,14 +219,14 @@ ul .listItems{
   #signout{
     padding: 6px 13px;
     position: fixed;
-    top: 85%;
+    top: 84%;
     /* margin: 0 auto; */
     left: 40%; /* container is 80% in width, thus 50% of that is 40%*/
   }
 
   #footer{
     position: fixed;
-    top:91%;
+    top:89%;
     left:0%;
   }
 
