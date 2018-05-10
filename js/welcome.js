@@ -53,7 +53,7 @@
     // Evening Properties
     if(curr_hour >= 17){
       document.getElementById('greet').innerHTML = "<h2> Good evening</h2>";
-      body.style.backgroundImage = "url('images/img7.jpeg')";
+      body.style.backgroundImage = "url('images/img8.jpeg')";
       body.style.backgroundPosition = 'center';
       body.style.backgroundAttachment = 'fixed';
       body.style.backgroundRepeat = 'no-repeat';
